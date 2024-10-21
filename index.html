@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Agency</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        .hero {
+            background-image: url('/travel/pexels-andreas-schnabl-1775843-19469869.jpg'); /* Replace with your image */
+            background-size: cover;
+            height: 100vh;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        footer {
+            color: green;
+            padding: 10px 0;
+        }
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        .navbar {
+    width: 100%;
+    font-weight: bolder;
+    position:fixed; /* Fixed at the top of the page */
+    top: 0; /* Stick to the top */
+    left: 0;
+    z-index: 1000; /* Make sure it stays on top of other content */
+    padding: 10px 0; /* Padding for the navbar */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullets */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content:end; /* Center the navbar links */
+}
+
+.navbar ul li {
+    margin: 0 15px; /* Space between each link */
+}
+
+.navbar ul li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* White link text */
+    font-weight:bolder; /* Default font weight */
+    font-size: 16px; /* Font size */
+    padding: 10px 15px; /* Padding around the link */
+}
+
+.navbar ul li a:hover {
+    background-color: #575757; /* Darker background on hover */
+    border-radius: 4px; /* Rounded corners on hover */
+}
+
+.navbar ul li a.active {
+    position: fixed;
+    font-weight: bold; /* Bold styling for the active (Home) link */
+    border-bottom: 2px solid white; /* Optional: underline the active link */
+}
+
+
+.navbar a {
+    display: block; /* Display links as block elements */
+    color: white; /* Link color */
+    text-decoration: none; /* Remove underline from links */
+    padding: 15px; /* Padding around links */
+}
+
+.navbar a:hover {
+    background-color: #575757; /* Change background on hover */
+}
+    </style>
+</head>
+<body style="background-color: black;">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Travel Agency</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="destination.html">Destinations</a></li>
+                <li class="nav-item"><a class="nav-link" href="tour.html">Tours</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <div>
+
+        </div>
+    </div>
+
+    <!-- Destinations Section -->
+    <div class="container my-5" id="destinations">
+        <h2 class="text-center mb-4"style="color: green;">Popular Destinations</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/travel/pexels-baran-robin-76507255-25797345.jpg" class="card-img-top" alt="Destination 1"> <!-- Replace with your image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Russia</h5>
+                        <p class="card-text">Experience the romance of the City of Lights.</p>
+                        <a href="https://youtu.be/YrNxPr4PKQo?si=BQxMoJaCJEU3Ftu2" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/travel/pexels-eberhardgross-8051671.jpg" class="card-img-top" alt="Destination 2"> <!-- Replace with your image -->
+                    <div class="card-body">
+                        <h5 class="card-title">Tokyo</h5>
+                        <p class="card-text">Immerse yourself in the vibrant culture of Japan.</p>
+                        <a href="https://youtu.be/rWpmr4QSV2w?si=BWjyxWy6kAaiy2g_" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="/travel/pexels-eslames1-28705871.jpg" class="card-img-top" alt="Destination 3"> <!-- Replace with your image -->
+                    <div class="card-body">
+                        <h5 class="card-title">kenya</h5>
+                        <p class="card-text">Explore the bustling streets of the Big Apple.</p>
+                        <a href="https://youtu.be/jxzzhJCLPwg?si=yNdoFqZkM9pkO3CU" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+   
+    <!-- Contact Form -->
+    <div class="container my-5">
+        <h2 class="text-center"style="color: green;">Contact Us</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="destination">Destination of Interest</label>
+                <input type="text" class="form-control" id="destination" placeholder="Enter destination" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="4" placeholder="Enter your message" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center">
+        <div class="container">
+            <p>&copy; 2024 Travel Agency. All rights reserved.</p>
+            <div>
+                <a href="#" class="mr-3">Facebook</a>
+                <a href="#" class="mr-3">Twitter</a>
+                <a href="#">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
